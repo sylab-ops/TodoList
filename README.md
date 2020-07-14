@@ -1,4 +1,5 @@
 # vue-project
+This is a simple TodoList web application.
 
 ## Project setup
 ```
