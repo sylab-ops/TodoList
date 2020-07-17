@@ -1,0 +1,34 @@
+<template>
+    <div class="todo-item" v-bind:class="{'is-complete':todo.completed}">
+        {{todo.title}}
+    </div>
+</template>
+
+<script>
+export default {
+    name: "TodoItem",
+    props: ["todo"]
+}
+</script>
+
+<style scoped>
+    .todo-item {
+        background: #f4f4f4;
+        padding: 0;
+        border-bottom: 1px #ccc dotted;
+    }
+
+    .is-complete {
+        text-decoration: line-through;
+    }
+
+    .del {
+        background: #ff0000;
+        color: #fff;
+        padding: 5px;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        float: right;
+    }
+</style>
